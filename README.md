@@ -1,2 +1,2 @@
 # HMS
-this is a hotel management shystem bla blA
+this is a hotel management system
