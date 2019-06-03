@@ -1,31 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #B3D0E1B3D0E1;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hms.FXMLDocumentController">
    <children>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="213.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@round-account-button-with-user-inside.png" />
-         </image>
-      </ImageView>
-      <TextField layoutX="205.0" layoutY="213.0" promptText="Username" />
-      <TextField layoutX="205.0" layoutY="262.0" promptText="Password" />
-      <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="153.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@user-shape.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="27.0" fitWidth="33.0" layoutX="153.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@locked-padlock.png" />
-         </image>
-      </ImageView>
-      <Button layoutX="259.0" layoutY="304.0" mnemonicParsing="false" text="Login" />
+      <Pane layoutX="221.0" layoutY="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="379.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="221.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="94.0" fitWidth="94.0" layoutX="137.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/round-account-button-with-user-inside.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="usernameField" layoutX="59.0" layoutY="203.0" prefHeight="25.0" prefWidth="272.0" promptText="Username" />
+            <TextField fx:id="passwordField" layoutX="59.0" layoutY="246.0" prefHeight="25.0" prefWidth="272.0" promptText="Password" />
+            <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="26.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/user-shape.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="27.0" fitWidth="33.0" layoutX="26.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/locked-padlock.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="loginButton" layoutX="53.0" layoutY="285.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: grey;" text="Login" />
+            <Button fx:id="registerButton" layoutX="200.0" layoutY="285.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: grey;" text="Register New Admin" />
+            <Label layoutX="53.0" layoutY="340.0" text="Forgot password?" />
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="66.0" prefHeight="400.0" prefWidth="221.0" style="-fx-background-color: grey;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="379.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="159.0" fitWidth="188.0" layoutX="31.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/hotel-with-three-floors.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="47.0" layoutY="241.0" text="Ni">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="68.0" layoutY="200.0" text="x">
+               <font>
+                  <Font size="65.0" />
+               </font>
+            </Label>
+            <Label layoutX="98.0" layoutY="241.0" text="on">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="133.0" layoutY="251.0" text="Hotels" />
+         </children>
+      </Pane>
    </children>
-</Pane>
+</AnchorPane>
