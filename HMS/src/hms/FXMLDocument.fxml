@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -9,9 +11,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hms.FXMLDocumentController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hms.FXMLDocumentController">
    <children>
-      <Pane layoutX="221.0" layoutY="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="379.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="221.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Pane layoutX="221.0" layoutY="32.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="398.0" prefWidth="379.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="221.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="32.0">
          <children>
             <ImageView fitHeight="94.0" fitWidth="94.0" layoutX="137.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -19,7 +21,6 @@
                </image>
             </ImageView>
             <TextField fx:id="usernameField" layoutX="59.0" layoutY="203.0" prefHeight="25.0" prefWidth="272.0" promptText="Username" />
-            <TextField fx:id="passwordField" layoutX="59.0" layoutY="246.0" prefHeight="25.0" prefWidth="272.0" promptText="Password" />
             <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="26.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@icons/user-shape.png" />
@@ -30,12 +31,23 @@
                   <Image url="@icons/locked-padlock.png" />
                </image>
             </ImageView>
-            <Button fx:id="loginButton" layoutX="53.0" layoutY="285.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: grey;" text="Login" />
-            <Button fx:id="registerButton" layoutX="200.0" layoutY="285.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: grey;" text="Register New Admin" />
-            <Label layoutX="53.0" layoutY="340.0" text="Forgot password?" />
+            <Button fx:id="loginButton" layoutX="53.0" layoutY="285.0" mnemonicParsing="false" onAction="#loginButtonClicked" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: grey;" text="Login">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="registerButton" layoutX="200.0" layoutY="285.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: grey;" text="Register New Admin">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Label layoutX="53.0" layoutY="340.0" text="Forgot password?">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Label>
+            <PasswordField fx:id="passwordField" layoutX="59.0" layoutY="246.0" prefHeight="25.0" prefWidth="272.0" promptText="Password" />
+            <Label fx:id="errorLabel" layoutX="59.0" layoutY="179.0" text="Login details incorrect" textFill="#ee1111" visible="false" />
          </children>
       </Pane>
-      <Pane layoutX="14.0" layoutY="66.0" prefHeight="400.0" prefWidth="221.0" style="-fx-background-color: grey;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="379.0" AnchorPane.topAnchor="0.0">
+      <Pane layoutX="14.0" layoutY="32.0" prefHeight="398.0" prefWidth="221.0" style="-fx-background-color: grey;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="379.0" AnchorPane.topAnchor="32.0">
          <children>
             <ImageView fitHeight="159.0" fitWidth="188.0" layoutX="31.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -60,5 +72,15 @@
             <Label layoutX="133.0" layoutY="251.0" text="Hotels" />
          </children>
       </Pane>
+      <ImageView fx:id="exitButton" fitHeight="17.0" fitWidth="27.0" layoutX="559.0" layoutY="6.0" onMouseClicked="#exitButtonClicked" onMouseEntered="#mouseOver" onMouseExited="#mouseOut" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons/close-button.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="minimizeButton" fitHeight="17.0" fitWidth="27.0" layoutX="518.0" layoutY="6.0" onMouseClicked="#minimizeButtonClicked" onMouseEntered="#mouseOver" onMouseExited="#mouseOut" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons/horizontal-line-remove-button.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
