@@ -10,21 +10,25 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 /**
  *
  * @author Abumuhab
  */
 public class HMS extends Application {
+    //making a static stage viariable for the mainStage so it can be refrenced outside of the class without instantiating the class
+    public static Stage mainStage;
     
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
-        
         Scene scene = new Scene(root);
-        
-        stage.setScene(scene);
-        stage.show();
+        mainStage=stage;
+        mainStage.setResizable(false);
+        mainStage.initStyle(StageStyle.UNDECORATED);//this line of code simply removes the default windows minimize,close and exit button so we just make ours
+        mainStage.setScene(scene);
+        mainStage.show();
     }
 
     /**
