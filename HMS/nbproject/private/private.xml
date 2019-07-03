@@ -3,9 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/abumu/Documents/git/HMS/HMS/src/hms/FXMLDocumentController.java</file>
-            <file>file:/C:/Users/abumu/Documents/git/HMS/HMS/src/hms/FXMLDocument.fxml</file>
-            <file>file:/C:/Users/abumu/Documents/git/HMS/HMS/src/hms/HMS.java</file>
+            <file>file:/Users/Al-purim/NetBeansProjects/HMS/HMS/src/hms/FXMLDocumentController.java</file>
+            <file>file:/Users/Al-purim/NetBeansProjects/HMS/HMS/src/hms/HMS.java</file>
+            <file>file:/Users/Al-purim/NetBeansProjects/HMS/HMS/src/hms/dashboard.fxml</file>
+            <file>file:/Users/Al-purim/NetBeansProjects/HMS/HMS/src/hms/Dashboard.java</file>
+            <file>file:/Users/Al-purim/NetBeansProjects/HMS/HMS/src/hms/FXMLDocument.fxml</file>
         </group>
     </open-files>
 </project-private>
