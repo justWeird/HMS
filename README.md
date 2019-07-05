@@ -17,9 +17,9 @@ To be illustrated later
 ## Contributions
 This project is a private project and unless approved by the main contributors and hosts, pull requests will be denied.
 Main contributors:
-**Adumalik Muhammad** @
-**Tuksa David** @
-**Fadiji Joseph** @
+**Adumalik Muhammad** @ abumuhab98  
+**Tuksa David** @ DeTuksa  
+**Fadiji Joseph** @  justWierd
 
 ## Extra
 This project is aimed at increasing proficiency in the use of java for GUI applications.
