@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="734.0" style="-fx-background-color: transparent;" type="HBox" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox HBox.hgrow="ALWAYS">
+         <children>
+            <HBox fx:id="dashboard" alignment="CENTER_LEFT" prefHeight="27.0" prefWidth="669.0" style="-fx-background-color: #55A4B1;">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="BUILDING_ALT" size="25">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-font-weight: bold;" text="NiXon Hotels">
+                     <font>
+                        <Font name="Tamil Sangam MN" size="14.0" />
+                     </font>
+                  </Text>
+                  <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <JFXButton fx:id="logoutButton" onAction="#logoutButtonClicked" onMouseEntered="#mouseOver" onMouseExited="#mouseOut" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: white;" text="LOGOUT" textFill="#fcfcfc">
+                     <font>
+                        <Font name="Dubai Medium" size="12.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <VBox fx:id="switchUp" alignment="CENTER" prefHeight="475.0" prefWidth="734.0">
+               <children>
+                  <Label text="MENU" textFill="#515151">
+                     <font>
+                        <Font name="Dubai Medium" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Separator prefHeight="91.0" prefWidth="687.0" />
+                  <HBox prefHeight="480.0" prefWidth="734.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="304.0" prefWidth="52.0" style="-fx-background-color: grey; -fx-background-radius: 100;">
+                           <children>
+                              <JFXButton fx:id="inbox" contentDisplay="GRAPHIC_ONLY" style="-fx-border-width: 0px 0px 0px 2px; -fx-border-color: #00ebff;">
+                                 <VBox.margin>
+                                    <Insets left="2.0" top="-20.0" />
+                                 </VBox.margin>
+                                 <graphic>
+                                    <FontAwesomeIconView accessibleRole="BUTTON" disable="true" fill="WHITE" glyphName="INBOX" onMouseEntered="#mouseOver" onMouseExited="#mouseOut" size="35">
+                                       <effect>
+                                          <DropShadow blurType="ONE_PASS_BOX" height="6.0" radius="2.725" width="6.9" />
+                                       </effect>
+                                    </FontAwesomeIconView>
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton fx:id="finance" contentDisplay="GRAPHIC_ONLY" style="-fx-border-width: 0px 0px 0px 2px; -fx-border-color: #00ebff;">
+                                 <VBox.margin>
+                                    <Insets left="2.0" top="10.0" />
+                                 </VBox.margin>
+                                 <graphic>
+                                    <FontAwesomeIconView accessibleRole="BUTTON" disable="true" fill="WHITE" glyphName="AREA_CHART" onMouseEntered="#mouseOver" onMouseExited="#mouseOut" size="30" wrappingWidth="28.28571319580078">
+                                       <effect>
+                                          <DropShadow blurType="ONE_PASS_BOX" height="6.0" radius="2.725" width="6.9" />
+                                       </effect>
+                                    </FontAwesomeIconView>
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton fx:id="management" contentDisplay="GRAPHIC_ONLY" style="-fx-border-width: 0px 0px 0px 2px; -fx-border-color: #00ebff;">
+                                 <VBox.margin>
+                                    <Insets left="4.0" top="10.0" />
+                                 </VBox.margin>
+                                 <graphic>
+                                    <FontAwesomeIconView accessibleRole="BUTTON" disable="true" fill="WHITE" glyphName="GEARS" onMouseEntered="#mouseOver" onMouseExited="#mouseOut" size="30" wrappingWidth="31.14285659790039">
+                                       <effect>
+                                          <DropShadow blurType="ONE_PASS_BOX" height="6.0" radius="2.725" width="6.9" />
+                                       </effect>
+                                    </FontAwesomeIconView>
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton fx:id="database" contentDisplay="GRAPHIC_ONLY" style="-fx-border-width: 0px 0px 0px 2px; -fx-border-color: #00ebff;">
+                                 <VBox.margin>
+                                    <Insets left="2.0" top="10.0" />
+                                 </VBox.margin>
+                                 <graphic>
+                                    <FontAwesomeIconView accessibleRole="BUTTON" disable="true" fill="WHITE" glyphName="DATABASE" onMouseEntered="#mouseOver" onMouseExited="#mouseOut" size="35" text="">
+                                       <effect>
+                                          <DropShadow blurType="ONE_PASS_BOX" height="6.0" radius="2.725" width="6.9" />
+                                       </effect>
+                                    </FontAwesomeIconView>
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="80.0" left="5.0" top="30.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="674.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="177.0" prefWidth="674.0">
+                                 <children>
+                                    <JFXButton fx:id="Reserve" contentDisplay="TOP" onAction="#makeReservations" prefHeight="110.0" prefWidth="110.0" ripplerFill="#00ebff" style="-fx-background-color: grey; -fx-text-fill: white; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #00ebff;" styleClass="Buttons" stylesheets="@style.css" text="RESERVATION">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="CALENDAR_CHECK_ALT" size="40">
+                                             <effect>
+                                                <DropShadow />
+                                             </effect>
+                                          </FontAwesomeIconView>
+                                       </graphic>
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                    <JFXButton fx:id="PBook" contentDisplay="TOP" onAction="#bookPool" prefHeight="110.0" prefWidth="110.0" ripplerFill="#00ebff" style="-fx-background-color: grey; -fx-text-fill: white; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #00ebff;" styleClass="Buttons" stylesheets="@style.css" text="POOL BOOKING">
+                                       <graphic>
+                                          <ImageView fitHeight="41.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../hms/icons/pool.png" />
+                                             </image>
+                                             <effect>
+                                                <DropShadow />
+                                             </effect>
+                                          </ImageView>
+                                       </graphic>
+                                       <HBox.margin>
+                                          <Insets left="38.0" />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                    <JFXButton fx:id="RMPanel" contentDisplay="TOP" onAction="#roomPanel" prefHeight="110.0" prefWidth="110.0" ripplerFill="#00ebff" style="-fx-background-color: grey; -fx-text-fill: white; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #00ebff;" styleClass="Buttons" stylesheets="@style.css" text="ROOM PANEL">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="INDENT" size="40">
+                                             <effect>
+                                                <DropShadow />
+                                             </effect>
+                                          </FontAwesomeIconView>
+                                       </graphic>
+                                       <HBox.margin>
+                                          <Insets left="38.0" />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                    <JFXButton fx:id="HStore" contentDisplay="TOP" onAction="#hotelStore" prefHeight="110.0" prefWidth="110.0" ripplerFill="#00ebff" style="-fx-background-color: grey; -fx-text-fill: white; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #00ebff;" styleClass="Buttons" stylesheets="@style.css" text="HOTEL STORE">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="SHOPPING_BASKET" size="40">
+                                             <effect>
+                                                <DropShadow />
+                                             </effect>
+                                          </FontAwesomeIconView>
+                                       </graphic>
+                                       <HBox.margin>
+                                          <Insets left="38.0" />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="167.0" prefWidth="674.0">
+                                 <children>
+                                    <JFXButton fx:id="HKeeping" contentDisplay="TOP" onAction="#houseKeeping" prefHeight="110.0" prefWidth="110.0" ripplerFill="#00ebff" style="-fx-background-color: grey; -fx-text-fill: white; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #00ebff;" styleClass="Buttons" stylesheets="@style.css" text="HOUSE KEEPING">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <Text fill="WHITE" text="🚪" textAlignment="CENTER">
+                                             <font>
+                                                <Font size="40.0" />
+                                             </font>
+                                             <effect>
+                                                <DropShadow />
+                                             </effect>
+                                          </Text>
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton fx:id="Laundry" contentDisplay="TOP" onAction="#Laundry" prefHeight="110.0" prefWidth="110.0" ripplerFill="#00ebff" style="-fx-background-color: grey; -fx-text-fill: white; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #00ebff;" styleClass="Buttons" stylesheets="@style.css" text="LAUNDRY">
+                                       <HBox.margin>
+                                          <Insets left="38.0" />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="👕" textAlignment="CENTER">
+                                             <font>
+                                                <Font size="40.0" />
+                                             </font>
+                                             <effect>
+                                                <DropShadow />
+                                             </effect>
+                                          </Text>
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton fx:id="RMService" contentDisplay="TOP" onAction="#RMService" prefHeight="110.0" prefWidth="110.0" ripplerFill="#00ebff" style="-fx-background-color: grey; -fx-text-fill: white; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #00ebff;" styleClass="Buttons" stylesheets="@style.css" text="ROOM SERVICE">
+                                       <HBox.margin>
+                                          <Insets left="38.0" />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="🍲" textAlignment="CENTER">
+                                             <font>
+                                                <Font size="40.0" />
+                                             </font>
+                                             <effect>
+                                                <DropShadow />
+                                             </effect>
+                                          </Text>
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton fx:id="FCentre" contentDisplay="TOP" onAction="#keepFit" prefHeight="110.0" prefWidth="110.0" ripplerFill="#00ebff" style="-fx-background-color: grey; -fx-text-fill: white; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #00ebff;" styleClass="Buttons" stylesheets="@style.css" text="FITNESS CENTRE">
+                                       <HBox.margin>
+                                          <Insets left="38.0" />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="HEARTBEAT" size="40">
+                                             <effect>
+                                                <DropShadow />
+                                             </effect>
+                                          </FontAwesomeIconView>
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT">
+                                 <children>
+                                    <FontAwesomeIconView fill="#00ebff" glyphName="QUESTION" size="20">
+                                       <HBox.margin>
+                                          <Insets right="30.0" />
+                                       </HBox.margin>
+                                    </FontAwesomeIconView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</fx:root>

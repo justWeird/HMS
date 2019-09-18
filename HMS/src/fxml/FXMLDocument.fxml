@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hms.FXMLDocumentController">
+   <children>
+      <Pane fx:id="loginPane" layoutX="221.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="379.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="221.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="32.0">
+         <children>
+            <VBox alignment="CENTER" layoutX="53.0" layoutY="17.0" prefHeight="348.0" prefWidth="300.0">
+               <children>
+                  <ImageView fitHeight="94.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../hms/icons/round-account-button-with-user-inside.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="30.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label fx:id="errorLabel" text="LOGIN DETAILS INCORRECT" textFill="#ee1111" visible="false">
+                     <graphic>
+                        <FontAwesomeIconView fill="#ee1111" glyphName="EXCLAMATION_CIRCLE" />
+                     </graphic>
+                     <font>
+                        <Font name="Dubai Medium" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin></Label>
+                  <TextField fx:id="usernameField" alignment="CENTER" prefHeight="25.0" prefWidth="272.0" promptText="Username" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: grey; -fx-background-color: transparent; -fx-prompt-text-fill: grey;">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <PasswordField fx:id="passwordField" alignment="CENTER" onKeyPressed="#confirmEntry" prefHeight="25.0" prefWidth="272.0" promptText="Password" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: grey; -fx-background-color: transparent; -fx-prompt-text-fill: grey;">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="5.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Button fx:id="loginButton" mnemonicParsing="false" onAction="#loginButtonClicked" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: grey; -fx-text-fill: white;" text="Login">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Dubai Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Separator orientation="VERTICAL" prefHeight="41.0" prefWidth="24.0" />
+                        <Button fx:id="registerButton" mnemonicParsing="false" onAction="#RegNewAdmin" prefHeight="38.0" style="-fx-background-color: grey; -fx-text-fill: white;" text="Register New Admin">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Dubai Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Label text="Forgot password?">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets right="185.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="26.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../hms/icons/user-shape.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="27.0" fitWidth="33.0" layoutX="26.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../hms/icons/locked-padlock.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" prefHeight="430.0" prefWidth="221.0" style="-fx-background-color: grey;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="379.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="159.0" fitWidth="188.0" layoutX="31.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../hms/icons/hotel-with-three-floors.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="47.0" layoutY="241.0" text="Ni">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="68.0" layoutY="200.0" text="x">
+               <font>
+                  <Font size="65.0" />
+               </font>
+            </Label>
+            <Label layoutX="98.0" layoutY="241.0" text="on">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="133.0" layoutY="251.0" text="Hotels" />
+         </children>
+      </Pane>
+      <HBox alignment="CENTER_RIGHT" layoutX="221.0" layoutY="1.0" prefHeight="31.0" prefWidth="379.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fx:id="minimizeButton" fitHeight="17.0" fitWidth="27.0" onMouseClicked="#minimizeButtonClicked" onMouseEntered="#mouseOver" onMouseExited="#mouseOut" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../hms/icons/horizontal-line-remove-button.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="exitButton" fitHeight="17.0" fitWidth="27.0" onMouseClicked="#exitButtonClicked" onMouseEntered="#mouseOver" onMouseExited="#mouseOut" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../hms/icons/close-button.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
